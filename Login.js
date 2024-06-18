@@ -103,4 +103,16 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  iconContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 20,
+  },
+  icon: {
+    width: 80,
+    height: 80, 
+    borderRadius: 10,
+    marginHorizontal: 20,
+  },
 });
