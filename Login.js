@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-     alignItems: 'flex-start',
+ alignItems: 'flex-start',
     justifyContent: 'flex-start',
     padding: 16,
   },
