@@ -17,9 +17,9 @@ export default function Login() {
         placeholder="Password"
         secureTextEntry={true}
       />
-      <Button
-        title="Login"
-      />
+<TouchableOpacity style={styles.button} onPress={() => alert('Login button pressed')}>
+        <Text style={styles.buttonText}>Login</Text>
+      </TouchableOpacity>
      <View style={styles.lineContainer}>
         <View style={styles.line} />
         <Text style={styles.orText}> Or continue with </Text>
