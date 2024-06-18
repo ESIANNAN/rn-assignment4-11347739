@@ -44,4 +44,8 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderRadius: 5,
   },
+  welcome: {
+    fontSize: 25,
+  },
+  
 });
