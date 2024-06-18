@@ -59,5 +59,6 @@ const styles = StyleSheet.create({
   apply: {
     marginLeft: -30,
     marginBottom: 60,
+    color: 'grey',
   },
 });
