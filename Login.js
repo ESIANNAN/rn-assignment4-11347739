@@ -6,7 +6,10 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Jobizz</Text>
-     <Text style={styles.welcome}>Welcome Back</Text>
+    <View style={styles.welcomeContainer}>
+        <Text style={styles.welcome}>Welcome Back</Text>
+      <Image source={require('./assets/waving.png')}style={styles.wavingIcon} />
+      </View>
     <Text style={styles.Apply}>Let's login.Apply to jobs!</Text>
       <TextInput
         style={styles.input}
@@ -68,6 +71,15 @@ const styles = StyleSheet.create({
      marginBottom: 5,
     marginLeft: 18,
     fontWeight: 'bold',
+  },
+  welcomeContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  wavingIcon: {
+    width: 30, 
+    height: 30, 
+    marginLeft: 10, 
   },
   apply: {
     marginLeft: 18,
