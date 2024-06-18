@@ -66,4 +66,19 @@ const styles = StyleSheet.create({
     marginBottom: 60,
     color: 'grey',
   },
+   lineContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: 'grey',
+  },
+  orText: {
+    marginHorizontal: 10,
+    color: 'grey',
+  },
 });
