@@ -20,6 +20,11 @@ export default function Login() {
       <Button
         title="Login"
       />
+     <View style={styles.lineContainer}>
+        <View style={styles.line} />
+        <Text style={styles.orText}> Or continue with </Text>
+        <View style={styles.line} />
+      </View> 
       <StatusBar style="auto" />
     </View>
   );
