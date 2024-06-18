@@ -7,6 +7,7 @@ export default function Login() {
     <View style={styles.container}>
       <Text style={styles.title}>Jobizz</Text>
      <Text style={styles.welcome}>Welcome Back</Text>
+    <Text style={styles.Apply}>Let's login.Apply to jobs!</Text>
       <TextInput
         style={styles.input}
         placeholder="Username"
