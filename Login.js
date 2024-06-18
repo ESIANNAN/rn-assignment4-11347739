@@ -17,7 +17,7 @@ export default function Login() {
         placeholder="Password"
         secureTextEntry={true}
       />
-<TouchableOpacity style={styles.button} onPress={() => alert('Login button pressed')}>
+<TouchableOpacity style={styles.button} onPress={() => alert('Login successful')}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
      <View style={styles.lineContainer}>
