@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 25,
      marginBottom: 5,
+    marginLeft: -67,
   },
   
 });
