@@ -26,9 +26,12 @@ export default function Login() {
         <View style={styles.line} />
       </View> 
           
-       <View>
-        <Image source={require('./assets/google.png')} style={styles.Icon} />
-        </View>
+        <View style={styles.iconContainer}>
+        <Image source={require('./assets/google.png')} style={styles.icon}/>
+        <Image source={require('./assets/apple.png')} style={styles.icon} />
+        <Image source={require('./assets/facebook.png')} style={styles.icon} />
+     </View>
+          
       <StatusBar style="auto" />
     </View>
   );
