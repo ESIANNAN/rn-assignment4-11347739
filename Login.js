@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
      marginBottom: 5,
      marginTop: 140,
-    marginLeft: -67,
+    marginLeft: -30,
   },
   input: {
     width: '100%',
@@ -50,7 +50,10 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 25,
      marginBottom: 5,
-    marginLeft: -67,
+    marginLeft: -30,
   },
-  
+  apply: {
+    marginLeft: -30,
+    marginBottom: 60,
+  },
 });
