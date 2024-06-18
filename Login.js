@@ -34,7 +34,9 @@ export default function Login() {
         <Image source={require('./assets/apple.png')} style={styles.icon} />
         <Image source={require('./assets/facebook.png')} style={styles.icon} />
      </View>
-          
+    <Text style={styles.lastText}>
+        Don't have an account?<Text style={styles.smallBottom}>Register</Text>
+     </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -127,5 +129,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginHorizontal: 20,
     marginLeft: 50,
+  },
+  lastText: {
+    color: 'grey',
+    marginLeft: 70,
+    marginTop: 50,
+  },
+  smallBottom: {
+    color: '#5072A7',
   },
 });
