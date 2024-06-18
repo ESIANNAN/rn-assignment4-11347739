@@ -6,6 +6,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Jobizz</Text>
+     <Text style={styles.welcome}>Welcome Back</Text>
       <TextInput
         style={styles.input}
         placeholder="Username"
