@@ -34,10 +34,12 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   title: {
-    fontSize: 24,
-     marginBottom: 5,
+    fontSize: 22,
+     marginBottom: 10,
      marginTop: 140,
     marginLeft: -30,
+     fontWeight: 'bold',
+    color:'#5072A7',
   },
   input: {
     width: '100%',
