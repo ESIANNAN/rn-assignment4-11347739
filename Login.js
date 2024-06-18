@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    marginBottom: 24,
+     marginBottom: 5,,
   },
   input: {
     width: '100%',
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 25,
+     marginBottom: 5,
   },
   
 });
