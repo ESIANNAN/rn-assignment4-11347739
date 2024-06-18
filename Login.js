@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   apply: {
     marginLeft: 18,
-    marginBottom: 60,
+    marginBottom: 40,
     color: 'grey',
   },
    lineContainer: {
