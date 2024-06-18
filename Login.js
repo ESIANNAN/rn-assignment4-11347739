@@ -5,7 +5,7 @@ import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
 export default function Login() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Jobizz</Text>
       <TextInput
         style={styles.input}
         placeholder="Username"
