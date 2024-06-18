@@ -35,7 +35,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-     marginBottom: 5,,
+     marginBottom: 5,
+     marginTop: 140,
+    marginLeft: -67,
   },
   input: {
     width: '100%',
