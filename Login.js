@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     color:'#5072A7',
   },
   input: {
-    width: '100%',
+    width: 270,
     padding: 10,
     marginVertical: 8,
     borderWidth: 1,
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
      marginBottom: 5,
     marginLeft: -30,
+    fontWeight: 'bold',
   },
   apply: {
     marginLeft: -30,
