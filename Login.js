@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   title: {
-    fontSize: 30,
+    fontSize: 24,
     marginBottom: 24,
   },
   input: {
