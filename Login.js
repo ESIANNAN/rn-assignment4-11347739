@@ -25,6 +25,10 @@ export default function Login() {
         <Text style={styles.orText}> Or continue with </Text>
         <View style={styles.line} />
       </View> 
+          
+       <View>
+        <Image source={require('./assets/google.png')} style={styles.Icon} />
+        </View>
       <StatusBar style="auto" />
     </View>
   );
