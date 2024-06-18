@@ -82,4 +82,18 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     color: 'grey',
   },
+    button: {
+    backgroundColor: '#5072A7',
+    padding: 15,
+    marginTop: 20,
+    width: 310,
+    maxWidth: 400, 
+    alignItems: 'center',
+    alignSelf: 'center', 
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
 });
