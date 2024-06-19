@@ -15,29 +15,37 @@ export default function Login() {
         placeholder="Search a for a job"
       />
      <ScrollView horizontal style={styles.scrollview}>
-        <View style={styles.largeSlide}>
+        <View style={styles.largeSlideOne}>
             <Text style={styles.activities}>Software Engineer</Text>
+            <Text style={styles.smallText}>Facebook</Text>
         </View>
-        <View style={styles.largeSlide}>
+        <View style={styles.largeSlideTwo }>
             <Text style={styles.activities}>Data Analyst</Text>
+            <Text style={styles.smallText}>Google</Text>
         </View>
-        <View style={styles.largeSlide}>
+        <View style={styles.largeSlideThree }>
             <Text style={styles.activities}>Cleaner</Text>
+            <Text style={styles.smallText}>Melcom</Text>
         </View>
-        <View style={styles.largeSlide}>
+        <View style={styles.largeSlideFour}>
             <Text style={styles.activities}>Procurement officer</Text>
+            <Text style={styles.smallText}>Tema Development Company</Text>
         </View>
-        <View style={styles.largeSlide}>
+        <View style={styles.largeSlideFive}>
             <Text style={styles.activities}>Hr Manager</Text>
+            <Text style={styles.smallText}>Lesfam Company</Text>
         </View>
-           <View style={styles.largeSlide}>
+          <View style={styles.largeSlideSix}>
             <Text style={styles.activities}>Game Designer</Text>
+            <Text style={styles.smallText}>Gaming Company of Ghana</Text>
         </View>
-          <View style={styles.largeSlide}>
+          <View style={styles.largeSlideSeven}>
             <Text style={styles.activities}>Head of IT and Business solution</Text>
+            <Text style={styles.smallText}>Lesfam Company Limited</Text>
         </View>
-          <View style={styles.largeSlide}>
+          <View style={styles.largeSlideEight}>
             <Text style={styles.activities}>Mobile App Developer</Text>
+            <Text style={styles.smallText}>Apple</Text>
         </View>
       </ScrollView>
        
