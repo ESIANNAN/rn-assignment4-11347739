@@ -82,22 +82,83 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
      marginBottom: 30,
   },
-    jobs: {
+ jobs: {
     fontSize: 16,
     fontWeight: 'bold',
   },
-  largeSlide: {
-    alignItems: 'center',
+  largeSlideOne: {
+    marginRight: 15,
+    backgroundColor: 'green',
+    borderRadius: 40,
+    padding: 40,
+    width: 350,
+    height: 270,
+    marginLeft: 20,
+  },
+  smallText: {
+    fontSize: 15,
+
+  },
+  activities:{
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+    largeSlideTwo: {
     marginRight: 15,
     backgroundColor: '#FBF9F7',
     borderRadius: 15,
     padding: 15,
-    width: 200,
-    height: 200,
+     width: 350,
+    height: 270,
   },
- 
- 
-  
+    largeSlideThree: {
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+     width: 350,
+    height: 270,
+  },
+    largeSlideFour: {
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+    width: 350,
+    height: 270,
+  },
+   largeSlideFive: {
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+    width: 350,
+    height: 270,
+  },
+   largeSlideSix: {
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+    width: 350,
+    height: 270,
+  },
+    largeSlideSeven: {
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+    width: 350,
+    height: 270,
+  },
+    largeSlideEight: {
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+     width: 350,
+    height: 270,
+  },
 
 });
 
