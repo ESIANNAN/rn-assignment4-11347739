@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
    email: {
     fontSize: 20,
     color: 'grey',
-    marginBottom: 60, 
+    marginBottom: 40, 
   },
    input: {
     width: 250,
