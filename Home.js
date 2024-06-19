@@ -1,20 +1,36 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image,} from 'react-native';
+import { StyleSheet, Text, View, TextInput,ScrollView, FlatList,Image} from 'react-native';
 
 
 
 export default function Login() {
-  return (
-    <View style={styles.container}>
-      <Text styles={styles.name}>Philomina</Text>
-      <Text style={styles.email}>annanesi875@gmail.com</Text>
 
-     <TextInput
+
+   const tasks = [
+    { id: '1', title: 'Product Manager',image: require('./assets/facebook.png') },
+    { id: '2', title: 'Warehouse Manager',image: require('./assets/amazon.png')  },
+    { id: '3', title: 'Head of Marketting',image: require('./assets/melcom.png') },
+    { id: '4', title: 'Truck Driver',image: require('./assets/walmart.jpg') },
+    { id: '5', title: 'Data Analyst',image: require('./assets/google.png') },
+    { id: '6', title: 'Product Manager',image: require('./assets/beats.png') },
+    { id: '7', title: 'Jr Executive',image: require('./assets/burger-king.png')},
+    { id: '8', title: 'Procurement Officer',image: require('./assets/apple.png')},
+    
+  ];
+  return (
+<ScrollView contentContainerStyle={styles.scrollViewContainer}>
+    <View style={styles.container}>
+      <Text style={styles.name}>Philomina</Text>
+      <Text style={styles.email}>annanesi875@gmail.com</Text>
+  
+      <TextInput
         style={styles.input}
         placeholder="Search a for a job"
       />
-     <ScrollView horizontal style={styles.scrollview}>
+      <Text style={styles.jobs}>Featured Jobs</Text>
+     
+      <ScrollView horizontal style={styles.scrollview}>
         <View style={styles.largeSlideOne}>
             <Text style={styles.activities}>Software Engineer</Text>
             <Text style={styles.smallText}>Facebook</Text>
@@ -48,9 +64,19 @@ export default function Login() {
             <Text style={styles.smallText}>Apple</Text>
         </View>
       </ScrollView>
-       
+     <FlatList
+          data={tasks}
+          renderItem={({ item }) => (
+            <View style={styles.taskBox}>
+             <Image source={item.image} style={styles.taskImage} />
+              <Text style={styles.task}>{item.title}</Text>
+            </View>
+          )}
+          keyExtractor={item => item.id}
+        />
       <StatusBar style="auto" />
     </View>
+  </ScrollView>
   );
 }
 
@@ -58,37 +84,37 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
     padding: 16,
-    paddingTop: 140,
-    marginLeft:-60,
+    paddingTop: 100,
+    marginLeft:20,
   },
   name: {
     fontSize: 30,
     marginBottom: 3,
     fontWeight: 'bold',
   },
-   email: {
+  email: {
     fontSize: 20,
     color: 'grey',
     marginBottom: 40, 
   },
-   input: {
+  input: {
     width: 250,
     borderWidth: 1,
     padding: 8,
     borderRadius: 15,
     paddingLeft: 15,
-     marginBottom: 30,
+    marginBottom: 30,
   },
- jobs: {
+  jobs: {
     fontSize: 16,
     fontWeight: 'bold',
   },
   largeSlideOne: {
     marginRight: 15,
-    backgroundColor: 'green',
+    backgroundColor: '#7CB9E8',
     borderRadius: 40,
     padding: 40,
     width: 350,
@@ -105,59 +131,79 @@ const styles = StyleSheet.create({
   },
     largeSlideTwo: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#002D62',
+    borderRadius: 40,
+    padding: 40,
      width: 350,
     height: 270,
   },
     largeSlideThree: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#6495ED',
+    borderRadius: 40,
+    padding: 40,
      width: 350,
     height: 270,
   },
     largeSlideFour: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#808080',
+    borderRadius: 40,
+    padding: 40,
     width: 350,
     height: 270,
   },
    largeSlideFive: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#CC0000',
+    borderRadius: 40,
+    padding: 40,
     width: 350,
     height: 270,
   },
    largeSlideSix: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#FFFF66',
+    borderRadius: 40,
+    padding: 40,
     width: 350,
     height: 270,
   },
     largeSlideSeven: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#6495ED',
+    borderRadius: 40,
+    padding: 40,
     width: 350,
     height: 270,
   },
     largeSlideEight: {
     marginRight: 15,
-    backgroundColor: '#FBF9F7',
-    borderRadius: 15,
-    padding: 15,
+    backgroundColor: '#7CB9E8',
+    borderRadius: 40,
+    padding: 40,
      width: 350,
     height: 270,
+  },
+  taskBox: {
+    flexDirection: 'row',
+    backgroundColor: '#7CB9E8',
+    borderRadius: 15,
+    marginBottom: 10,
+    marginTop: 12,
+    padding: 40,
+    width: 300,
+    Height: 400,
+  },
+  task: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginLeft: 10,
+  },
+  taskImage: {
+    width: 35,
+    height: 35,
+    
   },
 
 });
