@@ -69,6 +69,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+  largeSlide: {
+    alignItems: 'center',
+    marginRight: 15,
+    backgroundColor: '#FBF9F7',
+    borderRadius: 15,
+    padding: 15,
+    width: 200,
+    height: 200,
+  },
  
  
   
