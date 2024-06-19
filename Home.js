@@ -47,6 +47,11 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 15,
     paddingLeft: 15,
+     marginBottom: 30,
+  },
+    jobs: {
+    fontSize: 16,
+    fontWeight: 'bold',
   },
  
  
