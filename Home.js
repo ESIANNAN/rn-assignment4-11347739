@@ -30,6 +30,15 @@ export default function Login() {
         <View style={styles.largeSlide}>
             <Text style={styles.activities}>Hr Manager</Text>
         </View>
+           <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Game Designer</Text>
+        </View>
+          <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Head of IT and Business solution</Text>
+        </View>
+          <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Mobile App Developer</Text>
+        </View>
       </ScrollView>
        
       <StatusBar style="auto" />
