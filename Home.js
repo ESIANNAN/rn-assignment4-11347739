@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
    email: {
-    fontSize: 16,
+    fontSize: 20,
     color: 'grey',
     marginBottom: 60, 
   },
@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
     width: 250,
     borderWidth: 1,
     padding: 8,
+    borderRadius: 15,
+    paddingLeft: 15,
   },
  
  
