@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 16,
+    paddingTop: 140,
+    marginLeft:-120,
   },
   name: {
     fontSize: 30,
