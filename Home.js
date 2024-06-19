@@ -8,7 +8,12 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <Text styles={styles.name}>Philomina</Text>
+      <Text>annanesi875@gmail.com</Text>
 
+     <TextInput
+        style={styles.input}
+        placeholder="Search a for a job"
+      />
      
        
       <StatusBar style="auto" />
