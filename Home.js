@@ -1,13 +1,41 @@
-// HomeScreen.js
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, Text, View, Image,} from 'react-native';
 
-const HomeScreen = () => {
+
+
+export default function Login() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home Screen</Text>
+    <View style={styles.container}>
+      <Text styles={styles.name}>Philomina</Text>
+
+     
+       
+      <StatusBar style="auto" />
     </View>
   );
-};
+}
 
-export default HomeScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 16,
+  },
+  name: {
+    fontSize: 30,
+    marginBottom: 10,
+    marginTop: 140,
+    marginLeft: 18,
+    fontWeight: 'bold',
+    color:'#5072A7',
+  },
+  
+ 
+ 
+  
+
+});
+
