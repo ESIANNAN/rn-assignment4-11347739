@@ -14,7 +14,23 @@ export default function Login() {
         style={styles.input}
         placeholder="Search a for a job"
       />
-     
+     <ScrollView horizontal style={styles.scrollview}>
+        <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Software Engineer</Text>
+        </View>
+        <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Data Analyst</Text>
+        </View>
+        <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Cleaner</Text>
+        </View>
+        <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Procurement officer</Text>
+        </View>
+        <View style={styles.largeSlide}>
+            <Text style={styles.activities}>Hr Manager</Text>
+        </View>
+      </ScrollView>
        
       <StatusBar style="auto" />
     </View>
