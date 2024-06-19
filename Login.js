@@ -1,42 +1,54 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
+import { StyleSheet, Text, TextInput,TouchableOpacity, View, Image,} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
+
+
 
 export default function Login() {
+    
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Jobizz</Text>
-    <View style={styles.welcomeContainer}>
+      <View style={styles.welcomeContainer}>
         <Text style={styles.welcome}>Welcome Back</Text>
       <Image source={require('./assets/waving.png')}style={styles.wavingIcon} />
       </View>
-    <Text style={styles.Apply}>Let's login.Apply to jobs!</Text>
+
+      <Text style={styles.apply}>Let's login.Apply to jobs!</Text>
       <TextInput
         style={styles.input}
         placeholder="Username"
+       
       />
       <TextInput
         style={styles.input}
         placeholder="Password"
         secureTextEntry={true}
+        
       />
-<TouchableOpacity style={styles.button} onPress={() => alert('Login successful')}>
+     <TouchableOpacity style={styles.button} onPress={() => alert('Login successful')}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
-     <View style={styles.lineContainer}>
+
+        <View style={styles.lineContainer}>
         <View style={styles.line} />
         <Text style={styles.orText}> Or continue with </Text>
         <View style={styles.line} />
-      </View> 
-          
-        <View style={styles.iconContainer}>
+      </View>
+
+     <View style={styles.iconContainer}>
         <Image source={require('./assets/google.png')} style={styles.icon}/>
         <Image source={require('./assets/apple.png')} style={styles.icon} />
         <Image source={require('./assets/facebook.png')} style={styles.icon} />
      </View>
-    <Text style={styles.lastText}>
+
+     <Text style={styles.lastText}>
         Don't have an account?<Text style={styles.smallBottom}>Register</Text>
      </Text>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -46,20 +58,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
- alignItems: 'flex-start',
+    alignItems: 'flex-start',
     justifyContent: 'flex-start',
     padding: 16,
   },
   title: {
     fontSize: 22,
-     marginBottom: 10,
-     marginTop: 140,
+    marginBottom: 10,
+    marginTop: 140,
     marginLeft: 18,
-     fontWeight: 'bold',
+    fontWeight: 'bold',
     color:'#5072A7',
   },
   input: {
-    width: 270,
+    width: 310,
     padding: 10,
     marginVertical: 8,
     borderWidth: 1,
@@ -70,7 +82,7 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 25,
-     marginBottom: 5,
+    marginBottom: 5,
     marginLeft: 18,
     fontWeight: 'bold',
   },
@@ -88,7 +100,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     color: 'grey',
   },
-   lineContainer: {
+  lineContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 20,
@@ -103,7 +115,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     color: 'grey',
   },
-    button: {
+  button: {
     backgroundColor: '#5072A7',
     padding: 15,
     marginTop: 20,
@@ -117,15 +129,15 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
-  },
-  iconContainer: {
+  },
+iconContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
     marginTop: 20,
   },
   icon: {
-    width: 80,
-    height: 80, 
+    width: 30,
+    height: 30, 
     borderRadius: 10,
     marginHorizontal: 20,
     marginLeft: 50,
@@ -138,4 +150,6 @@ const styles = StyleSheet.create({
   smallBottom: {
     color: '#5072A7',
   },
+
 });
+
