@@ -36,7 +36,11 @@ const styles = StyleSheet.create({
     marginBottom: 3,
     fontWeight: 'bold',
   },
-  
+   email: {
+    fontSize: 16,
+    color: 'grey',
+    marginBottom: 60, 
+  },
  
  
   
