@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 16,
     paddingTop: 140,
-    marginLeft:-120,
+    marginLeft:-60,
   },
   name: {
     fontSize: 30,
@@ -40,6 +40,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'grey',
     marginBottom: 60, 
+  },
+   input: {
+    width: 250,
+    borderWidth: 1,
+    padding: 8,
   },
  
  
